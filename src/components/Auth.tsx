@@ -4,14 +4,14 @@ import { ThemeSupa } from '@supabase/auth-ui-shared';
 import { supabase } from '../lib/supabase';
 
 export const Auth: React.FC = () => {
-   return (
-      <div className="max-w-md mx-auto p-6  rounded-lg shadow-sm">
-         <SupabaseAuth
-            supabaseClient={supabase}
-            appearance={{ theme: ThemeSupa }}
-            providers={['github', 'google']}
-            redirectTo={window.location.origin}
-         />
-      </div>
-   );
+  return (
+    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <SupabaseAuth
+        supabaseClient={supabase}
+        appearance={{ theme: ThemeSupa }}
+        providers={['github', 'google']}
+        redirectTo={window.location.origin}
+      />
+    </div>
+  );
 };

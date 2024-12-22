@@ -1,7 +1,7 @@
-export type ThemeType = 'dracula' | 'atomOneDark' | 'vs' | 'tomorrow' | 'twilight';
 export type BorderType = 'none' | 'simple' | 'gradient' | 'neon' | 'shadow' | 'dotted';
 export type ExportFormat = 'png' | 'jpeg' | 'svg';
 export type LanguageType = 'typescript' | 'javascript' | 'python' | 'java' | 'cpp' | 'html' | 'css' | 'json' | 'markdown';
+export type { ThemeType } from '../utils/themes';
 
 export interface SnapshotOptions {
   code: string;
@@ -10,6 +10,7 @@ export interface SnapshotOptions {
   padding: number;
   borderType: BorderType;
   borderColor: string;
+  borderImage?: string;
   fontFamily: string;
   fontSize: number;
   showLineNumbers: boolean;
